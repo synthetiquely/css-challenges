@@ -1,0 +1,86 @@
+* {
+  font-family: Roboto, sans-serif;
+  --main-bg-color: #85a5d4;
+  --container-bg-color: #fff;
+  --text-accent-color: #5572d6;
+  --text-color: #a7a7a7;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1000px;
+  max-height: 340px;
+  padding: 2.5rem;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 10px 2rem rgba(0, 0, 0, 0.5);
+  background-color: var(--container-bg-color);
+}
+
+.container__item {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container__item:hover,
+.container__item:active,
+.container__item:focus {
+  background-color: #eee;
+}
+
+.container__item__picture {
+  height: 65px;
+  padding-bottom: 20px;
+}
+
+.container__item__title,
+.container__item__price {
+  color: var(--text-accent-color);
+}
+
+.container__item__title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container__item__price {
+  font-weight: 500;
+}
+
+.container__item__text {
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.price__currency,
+.price__amount {
+  font-weight: 700;
+}
+
+.price__amount {
+  font-size: 2.3rem;
+}
+
+.price__currency {
+  font-size: 1.3rem;
+}
+
+.price__period {
+  font-size: 1.1rem;
+}
