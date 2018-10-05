@@ -1,0 +1,92 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+@media print {
+  .course-files,
+  #logo,
+  .final-result::before,
+  .sandbox::before,
+  .sandbox::after,
+  .info::before,
+  .final-result::after,
+  .info::after,
+  body::before,
+  .info h2,
+  .final-result h2,
+  img {
+    display: none;
+  }
+
+  body {
+    font-family: Georgia, serif;
+    font-size: 16pt;
+    line-height: 24pt;
+    background: none;
+    color: #000;
+  }
+
+  .final-result,
+  .info,
+  section,
+  footer {
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background: none;
+  }
+
+  .info p {
+    color: #000;
+  }
+
+  section:first-child::before {
+    border: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-size: 24pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 50pt;
+    margin: 0 0 20pt;
+    text-align: center;
+    width: 100%;
+    transform: rotate(0);
+    text-shadow: none;
+  }
+
+  h1 small {
+    font-size: 24pt;
+    color: #888;
+    margin: 0 0 10pt;
+  }
+
+  a {
+    margin: 0;
+  }
+
+  a::after {
+    content: " [" attr(href) "]";
+  }
+
+  footer a:link,
+  footer a:visited {
+    background: none;
+    padding: 0;
+    color: #000;
+  }
+}
